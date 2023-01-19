@@ -1,12 +1,15 @@
 def lis():
-  
+  count=0
+  if count <1:
     lis1=[1,2,3,4,5,6,8]
     lis2=["s","h","o","b","h","i","t"]
     print("first list is :- ", lis1,"second list is :- ", lis2)
     lis1, lis2 = lis2, lis1
     print("\n")
+    count+=1
     return print("second list is :- ",lis1, "first list is :- ",lis2)
     lis()
+  
     
 lis()
 
