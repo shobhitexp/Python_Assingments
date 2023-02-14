@@ -1,21 +1,14 @@
-cube = lambda x:x**3# complete the lambda function 
-
+cube = lambda x:x**3 
 def fibonacci(n):
-    list = []
-    
+    ls=[]
     for i in range(n):
-        
-        if(i==0):
-            x=0
-            list.append(x)
-        elif(i==1):
-            x = 1
-            list.append(x)
+        if(i/2<1):
+            x=i
+            ls.append(x)
         else:
-            x=list[i-1]+list[i-2]
-            list.append(x)
-    return list  
-
+            x=ls[i-1]+ls[i-2]
+            ls.append(x)
+    return ls   
 if __name__ == '__main__':
     n = int(input())
     print(list(map(cube, fibonacci(n))))
